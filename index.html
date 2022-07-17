@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="display.js"></script>
+</head>
+</head>
+<body>
+    <div>
+        <h1 class="text-center">CRUD Operation</h1>
+        <form onsubmit="onFormSubmit()" class="flex justify-center">      
+            <div>
+                <div class="p-2 flex flex-col">
+                    <label for="fname" class="m-1">Name:</label>
+                    <input type="text" id="fname" name="fname" class="border-2 border-gray-200 m-1">
+                </div>
+                
+                <div class=" p-2 flex flex-col">
+                 <label for="email" class="m-1">Email:</label>
+                 <input type="email" id="email" name="email" class="border-2 border-gray-200 m-1">
+                </div>
+
+                <div class=" p-2 flex flex-col">
+                 <label for="contact" class="m-1">Contact:</label>
+                 <input type="number" id="contact" name="contact" class="border-2 border-gray-200 m-1">
+                </div>
+
+                <div>
+                    <input type="submit"  value="Save Details" class="bg-green-700 text-white m-1 p-2 w-28 rounded">             
+                </div>
+            </div>
+        </form>
+
+        <div>
+            <table class="flex justify-center mt-5 " id="details">
+                <thead>
+                    <tr class="border-2 border-black">
+                        <th class="border-2 border-black p-2">Name</th>
+                        <th class="border-2 border-black p-2">Email</th>
+                        <th class="border-2 border-black p-2">Contact</th>
+                        <th class="border-2 border-black p-2">Edit</th>
+                        <th class="border-2 border-black p-2">Delete</th>             
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
