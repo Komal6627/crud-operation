@@ -24,7 +24,7 @@ cell3.innerHTML = data.contact;
 cell4 = newRow.insertCell(3);
 cell4.innerHTML = `<button onclick="onEdit(this)">Edit</button>`
 cell5 = newRow.insertCell(4);
-cell5.innerHTML = `<button>Delete</button>`
+cell5.innerHTML = `<button onclick="onDelete(this)">Delete</button>`
 }
 
 
@@ -42,5 +42,8 @@ function updateRecord(formData) {
     selectedRow.cells[2].innerHTML = formData.contact;
 }
  
-
+function onDelete(form) {
+        row = form.parentElement.parentElement;
+        document.getElementById("details").deleteRow(row.rowIndex);
+}
 
